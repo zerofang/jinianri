@@ -1,0 +1,4 @@
+<!--feedback.wxml-->
+<textarea id = "feedback" class = "feedback" type = "text" maxlength="400" placeholder="请写下您的意见或建议"/>
+<input id = "phone_number" class = "phone_number" type="number" maxlength="11" placeholder="联系电话"/>
+<button>提交</button>

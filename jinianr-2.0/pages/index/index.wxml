@@ -1,0 +1,52 @@
+<!--index.wxml-->
+<view class = "spinner-point" hidden="true">
+        <view class="spinner_line" style="{{right_line}}" ></view>
+        <view class="list" style="{{right_detail}}">
+            <block wx:for-items="{{btn_list}}">
+                <view id="{{item.option}}" bindtap="choose">
+                        <image src="{{item.src}}"></image>{{item.zh}}
+                </view>
+            </block>
+        </view>
+        <view bindtap="spinner" class="spinner_tip"></view>
+</view>
+<view class = "max_view" bindtap = "tap_max_view">
+    <view id = "timeline" class = "container">
+        <view class = "vertical-line" style = "height:{{line_height}}rpx;"></view>
+        <view class="left_box {{left_after}}">
+            <block wx:for-items="{{left_data}}">
+                <view class="left_box_i">
+                    <view id="{{index*2}}" data-select="{{item.full_time}}"  bindtap="select">
+                        <view class="time {{opacity}}">{{item.time}}</view>
+                        <view class="line"></view>
+                        <view class="left_point_{{index*2==select}} {{opacity}}"></view>
+                        <view class="title {{opacity}}">{{item.title}}</view>
+                    </view>
+                </view>
+            </block>
+        </view>
+        <view class="right_box {{right_after}}">
+            <block wx:for-items="{{right_data}}">
+                <view class="right_box_i">
+                <view id="{{2*index+1}}" data-select="{{item.full_time}}" bindtap="select">
+                    <view class="time {{opacity}}">{{item.time}}</view>
+                    <view class="line"></view>
+                    <view class="right_point_{{index*2+1==select}} {{opacity}}"></view>
+                    <view class="title {{opacity}}">{{item.title}}</view>
+                </view>
+                </view>
+            </block>
+        </view>
+    </view>
+    <view class = "icon-pen" style="top:{{icon_top}}rpx" bindtap = "add"></view>
+</view>
+<view>
+    <modal class="modal" hidden="{{tips_hidden}}" bindconfirm="confirm" bindcancel="cancel">
+        <view>您目前剩余{{times||10}}次</view>
+        <view>用户每年能享有享有10次免费记录</view>
+    </modal>
+    <view class = "icon-tips" bindtap="tips"></view>
+</view>
+
+
+

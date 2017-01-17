@@ -1,0 +1,28 @@
+<!--pages/add/add.wxml-->
+<view class="bg" style="min-height:{{minH}}px">
+    <view class="bg2" style="min-height:{{minH}}px"></view>
+    <view class="main" style="left:{{mainW}}px">
+        <view>
+            <text class = "time">{{time}}</text>
+        </view>
+        <view class="title">
+            <input id="heading" class="title_input" bindinput="bindinput" maxlength="14" type="text" placeholder="标题"/>
+            <text  class="title_hint">{{title_length}}/14</text>
+        </view>
+        <view class="content clear">
+            <textarea id="text" class="con_textarea" bindinput="bindinput" type="text" maxlength="140" placeholder="正文" />
+            <text class="content_hint">{{text_length}}/140</text>
+        </view>
+        <text class = "tips">(上传的图片均会被压缩,且总量不大于2M)</text>
+        <view class="img_box">
+            <image class="add_img" src="https://dn-8wKBIiQU.qbox.me/6d76882284f24233c752" bindtap="addimg"></image>
+            <image class="add_img" mode="aspectFill" src="{{tempPaths}}"></image>
+        </view>
+        <button size="mini" bindtap="push">提交</button>
+        <modal confirm-text="确认" cancel-text="继续编辑" hidden="{{modalhidden}}" bindconfirm="confirm" bindcancel="cancel">
+             <view>确认上传吗?</view>
+        </modal>
+</view>
+</view>
+
+

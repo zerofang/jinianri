@@ -1,0 +1,25 @@
+.feedback{
+    width: 660rpx;
+    height: 300rpx;
+    margin: 35rpx;
+    border: 3rpx solid #ccc;
+    border-radius: 10rpx;
+    padding: 10rpx;
+}
+.phone_number{
+    width: 620rpx;
+    height: 100rpx;
+    margin: 35rpx;
+    border: 3rpx solid #ccc;
+    padding-left: 30rpx;
+    padding-right: 30rpx;
+    border-radius: 10rpx;    
+}
+button{
+    width: 680rpx;
+    height: 120rpx;
+    background-color: #ffcc00;
+    margin-top: 45rpx;
+    margin-left:35rpx;
+    line-height: 3em;
+}

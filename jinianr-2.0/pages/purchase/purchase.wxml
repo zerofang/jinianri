@@ -1,0 +1,9 @@
+<!--purchase.wxml-->
+<view>剩余记录次数：{{last_count}}</view>
+<view>请选择购买次数</view>
+<view class = "buttons">
+    <block wx:for-items="{{btns}}">
+        <button bindtap="select" id="{{item}}" size="default">{{item}}</button>
+    </block>
+</view>
+<button class = "buy" >购买</button>

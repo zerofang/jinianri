@@ -1,0 +1,99 @@
+/* pages/add/add.wxss */
+.bg{
+    width:100%;
+    background-image:url('https://dn-8wKBIiQU.qbox.me/9f7c324cad07672c186e');
+    background-position: center;
+    background-size: 100%;
+}
+
+.bg2{
+    width:100%;
+    background-color: #000;
+    opacity: 0.5;
+}
+
+.main{
+    position: absolute;
+    top:2.5%;
+    width:680rpx;
+    height:94%;
+    padding: 10rpx 20rpx;
+    border-radius:10rpx;
+    background-color:#fff; 
+}
+
+.time{
+    font-weight: 500;
+}
+
+.title{
+    position: relative;
+    border-bottom: 2px solid #ccc;
+}
+
+.title_input{
+    width:90%;
+}
+
+.title_hint{
+    position: absolute;
+    bottom:0;
+    right:0;
+    color: #ccc;
+}
+
+.content{
+    font-size: 0.8em;
+    position: relative;
+    padding-top: 10rpx;
+    border-bottom:6rpx solid #ccc; 
+}
+
+.con_textarea{
+    width:100%;
+    height:400rpx;
+}
+
+.content_hint{
+    float: right;
+    color: #ccc;
+}
+.tips{
+    color:#ccc;
+    font-size: 0.7em;
+}
+.clear::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.block{
+    display: block;
+}
+
+.add_img{
+    margin-top: 10rpx;
+    border: 6rpx dashed #ccc;
+    border-radius: 10rpx;
+}
+
+.img_box{
+    width:100%;
+}
+
+.img_box image{
+    width:20%;
+    height:140rpx;
+    margin-right:20rpx; 
+}
+
+.main button{
+    position: fixed;
+    top:90%;
+    width: 680rpx;
+    height: 70rpx;
+    background-color: #ffcc00;
+    color: #fff;
+    text-align: center;
+}

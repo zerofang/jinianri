@@ -1,0 +1,17 @@
+<!--pages/detail/detail.wxml-->
+<view class="bg" style="min-height:{{min}}px">
+    <view class="bg2" style="min-height:{{min}}px"></view>
+    <view class="base">
+        <view class="main">
+            <text class = "time" >{{list.timestamp}}</text>
+            <text class = "title" >{{list.heading}}</text>
+            <text class="content">{{list.text}}</text>
+            <view class = "picture" bindtap = "zoom">
+                <image src="{{list.img}}" mode="aspectFill"></image>
+            </view>
+        </view>
+    </view>
+</view>
+<view class = "zoom" bindtap = "recover" style = "visibility:{{zoom_visibility}}">
+    <image src="{{list.img}}" mode="aspectFit"></image>
+</view>

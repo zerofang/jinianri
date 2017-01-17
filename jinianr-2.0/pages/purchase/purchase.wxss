@@ -1,0 +1,20 @@
+page{
+    text-align: center;
+    line-height: 2em;
+}
+.buttons button{
+    width: 680rpx;
+    height: 100rpx;
+    background-color: #fff;
+    border-radius: 15rpx;
+    border:3rpx solid #ccc;
+    margin-bottom: 40rpx;
+    line-height: 2.5em;
+}
+.buy{
+    width: 680rpx;
+    height: 120rpx;
+    background-color: #ffcc00;
+    line-height: 3em;
+    margin-top: 80rpx;
+}
